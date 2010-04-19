@@ -1,0 +1,38 @@
+/* ********** typography start **********
+
+// rhythmic unit set at 18px
+// 1em = 12px - the setting on the body element
+// subhead = 14px => new line height = 18/14 = 1.286
+
+$base_font_size_px   : 12px
+$rhythmic_unit       : 18px
+$base_line_height    : $rhythmic_unit / $base_font_size_px
+
+=rhythmic_font_size($font_size_em: 1em, $rhythmic_units_to_add: 0, $bottom_proportion: 1)
+  $rhythm      : ceil(($font_size_em * $base_font_size_px) / $rhythmic_unit)
+  rhythm       : $rhythm
+  $line_height : ($rhythm * $rhythmic_unit) / ($font_size_em * $base_font_size_px)
+  font-size:     $font_size_em
+  line-height:   $line_height
+  margin-top:    #{$line_height * $rhythmic_units_to_add * (1-$bottom_proportion)}em
+  margin-bottom: #{$line_height * $rhythmic_units_to_add * $bottom_proportion}em
+
+body
+  font: $base_font_size_px \/ $base_line_height Georgia, "Helvetica Neue", Helvetica, Arial, sans-serif
+
+.sidenote
+  text-indent: -0.7em
+  +rhythmic_font_size(0.8333em)
+
+p
+  font-size: 1em
+  margin: 0 0 1.5em 0
+  width: 33em
+
+h1
+  +rhythmic_font_size(1.5em, 1)
+  font-weight: normal
+  
+h2
+  +rhythmic_font_size(1.1667em, 1)
+  font-weight: normal
