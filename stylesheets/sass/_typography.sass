@@ -4,35 +4,45 @@
 // 1em = 12px - the setting on the body element
 // subhead = 14px => new line height = 18/14 = 1.286
 
-$base_font_size_px   : 12px
-$rhythmic_unit       : 18px
+$base_font_size_px   : 16px
+$rhythmic_unit       : 24px
 $base_line_height    : $rhythmic_unit / $base_font_size_px
 
-=rhythmic_font_size($font_size_em: 1em, $rhythmic_units_to_add: 0, $bottom_proportion: 1)
+=rhythmic_font_size($font_size_em: 1em, $rhythmic_units_top: 0, $rhythmic_units_bot: 0, $padding_allowance_top_px: 0px, $padding_allowance_bot_px: 0px, $padding_allowance_top_em: 0em, $padding_allowance_bot_em: 0em)
   $rhythm      : ceil(($font_size_em * $base_font_size_px) / $rhythmic_unit)
-  rhythm       : $rhythm
   $line_height : ($rhythm * $rhythmic_unit) / ($font_size_em * $base_font_size_px)
   font-size:     $font_size_em
   line-height:   $line_height
-  margin-top:    #{$line_height * $rhythmic_units_to_add * (1-$bottom_proportion)}em
-  margin-bottom: #{$line_height * $rhythmic_units_to_add * $bottom_proportion}em
+  margin-top:    ($line_height * $rhythmic_units_top * 1em) - ($padding_allowance_top_px / $base_font_size_px * 1em) - $padding_allowance_top_em
+  margin-bottom: ($line_height * $rhythmic_units_bot * 1em) - ($padding_allowance_bot_px / $base_font_size_px * 1em) - $padding_allowance_bot_em
 
 body
   font: $base_font_size_px \/ $base_line_height Georgia, "Helvetica Neue", Helvetica, Arial, sans-serif
 
 .sidenote
-  text-indent: -0.7em
-  +rhythmic_font_size(0.8333em)
+  +rhythmic_font_size(0.7em)
 
 p
-  font-size: 1em
-  margin: 0 0 1.5em 0
+  +rhythmic_font_size(1em, 1, 1)
   width: 33em
 
 h1
-  +rhythmic_font_size(1.5em, 1)
+  +rhythmic_font_size(2em, 1, 1, 0px, 0px, 0em, 0.5em)
   font-weight: normal
-  
+  border-top:     0px solid black
+  border-bottom:  0px solid black
+  padding-top:    0em
+  padding-bottom: 0.5em
+
 h2
-  +rhythmic_font_size(1.1667em, 1)
+  +rhythmic_font_size(1.1667em, 0, 1)
   font-weight: normal
+
+h3
+  +rhythmic_font_size(1.2em, 1, 1, 1px, 1px, 0.3em, 0.3em)
+  font-weight: normal
+  border-top:     1px solid black
+  border-bottom:  1px solid black
+  padding-top:    0.3em
+  padding-bottom: 0.3em
+  

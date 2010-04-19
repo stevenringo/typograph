@@ -26,9 +26,9 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 /* ********** reset end ********** */
 /* ********** layout start ********** */
-body { background: url("../images/underline.gif"); -webkit-background-size: 18px; margin: 3em 6em; }
+body { background: url("../images/underline.gif"); -webkit-background-size: 24px; margin: 3em 6em; }
 
-.sidenote { width: 12em; margin-right: 0; position: absolute; top: 0; left: 42.6em; }
+.sidenote { width: 12em; margin-right: 0; position: absolute; top: 0; left: 600px; }
 
 .footnote { border-top: 0.083em solid black; margin-top: 2.25em; padding-top: 0.667em; margin-left: 0; width: 45.5em; }
 
@@ -36,12 +36,14 @@ body { background: url("../images/underline.gif"); -webkit-background-size: 18px
 
 /* ********** layout end ********** */
 /* ********** typography start ********** */
-body { font: 12px / 1.5 Georgia, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+body { font: 16px / 1.5 Georgia, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-.sidenote { text-indent: -0.7em; rhythm: 1em; font-size: 0.833em; line-height: 1.8; margin-top: 0em; margin-bottom: 0em; }
+.sidenote { font-size: 0.7em; line-height: 2.143; margin-top: 0em; margin-bottom: 0em; }
 
-p { font-size: 1em; margin: 0 0 1.5em 0; width: 33em; }
+p { font-size: 1em; line-height: 1.5; margin-top: 1.5em; margin-bottom: 1.5em; width: 33em; }
 
-h1 { rhythm: 1em; font-size: 1.5em; line-height: 1; margin-top: 0em; margin-bottom: 1em; font-weight: normal; }
+h1 { font-size: 2em; line-height: 1.5; margin-top: 1.5em; margin-bottom: 1em; font-weight: normal; border-top: 0px solid black; border-bottom: 0px solid black; padding-top: 0em; padding-bottom: 0.5em; }
 
-h2 { rhythm: 1em; font-size: 1.167em; line-height: 1.286; margin-top: 0em; margin-bottom: 1.286em; font-weight: normal; }
+h2 { font-size: 1.167em; line-height: 1.286; margin-top: 0em; margin-bottom: 1.286em; font-weight: normal; }
+
+h3 { font-size: 1.2em; line-height: 1.25; margin-top: 0.888em; margin-bottom: 0.888em; font-weight: normal; border-top: 1px solid black; border-bottom: 1px solid black; padding-top: 0.3em; padding-bottom: 0.3em; }
