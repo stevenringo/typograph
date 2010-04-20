@@ -1,0 +1,14 @@
+$rhythmic_unit_px: $base_line_height * $base_font_size_px
+// $rhythmic_unit_px is the interval, in px, for each "beat" - "horizontal alignment lines"
+
+=rhythmic_font_size($font_size_em: 1em, $rhythmic_units_top: 0, $rhythmic_units_bot: 0, $padding_allowance_top_px: 0px, $padding_allowance_bot_px: 0px, $padding_allowance_top_em: 0em, $padding_allowance_bot_em: 0em)
+  // $rhythm is the minimum whole number of "rhythmic units"
+  // to accommodate a certain font-size (font-size in em)
+  $rhythm:       ceil(($font_size_em * $base_font_size_px) / $rhythmic_unit_px)
+  // $line-height is the resultant line height (unitless) required
+  // to align the text onto the spacing dictated by the rhythm
+  $line_height:  ($rhythm * $rhythmic_unit_px) / ($font_size_em * $base_font_size_px)
+  font-size:     $font_size_em
+  line-height:   $line_height
+  margin-top:    ($line_height * $rhythmic_units_top * 1em) - ($padding_allowance_top_px / $base_font_size_px * 1em) - $padding_allowance_top_em
+  margin-bottom: ($line_height * $rhythmic_units_bot * 1em) - ($padding_allowance_bot_px / $base_font_size_px * 1em) - $padding_allowance_bot_em

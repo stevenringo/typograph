@@ -46,4 +46,4 @@ h1 { font-size: 2em; line-height: 1.5; margin-top: 1.5em; margin-bottom: 1em; fo
 
 h2 { font-size: 1.167em; line-height: 1.286; margin-top: 0em; margin-bottom: 1.286em; font-weight: normal; }
 
-h3 { font-size: 1.2em; line-height: 1.25; margin-top: 0.888em; margin-bottom: 0.888em; font-weight: normal; border-top: 1px solid black; border-bottom: 1px solid black; padding-top: 0.3em; padding-bottom: 0.3em; }
+h3 { font-size: 1.2em; line-height: 1.25; margin-top: 0.625em; margin-bottom: 0.625em; font-weight: normal; border-top: 10px solid black; border-bottom: 10px solid black; }
