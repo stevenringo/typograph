@@ -40,10 +40,10 @@ body { font: 14px / 1.5 Georgia, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 .sidenote { font-size: 0.7em; line-height: 2.143; margin-top: 0em; margin-bottom: 0em; }
 
-p { font-size: 1em; line-height: 1.5; margin-top: 1.5em; margin-bottom: 0em; width: 33em; }
+p { font-size: 1em; line-height: 1.5; margin-top: 0em; margin-bottom: 1.5em; width: 33em; }
 
-h1 { font-size: 2em; line-height: 1.5; margin-top: 1.5em; margin-bottom: 1.5em; font-weight: normal; }
+h1 { font-size: 2em; line-height: 1.5; margin-top: 0.75em; margin-bottom: 0.75em; font-weight: normal; }
 
 h2 { font-size: 1.167em; line-height: 1.286; margin-top: 0em; margin-bottom: 1.286em; font-weight: normal; }
 
-h3 { font-size: 8em; line-height: 1.125; margin-top: -0.009em; margin-bottom: -0.009em; font-weight: normal; border-width: 1px 0 1px 0; padding-top: 0em; padding-bottom: 0em; border-style: solid; border-color: black; background: green; }
+h3 { font-size: 4em; line-height: 1.125; margin-top: 0.545em; margin-bottom: 0.545em; font-weight: normal; border-width: 1px 0 1px 0; padding-top: 0em; padding-bottom: 0em; border-style: solid; border-color: black; background: green; }

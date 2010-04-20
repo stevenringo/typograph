@@ -11,7 +11,12 @@ $rhythmic_unit_px: $base_line_height * $base_font_size_px
   font-size:     $font_size_em
   line-height:   $line_height
   $current_font_size_px = ($font_size_em / 1em) * $base_font_size_px
+
   $border_allowance_top_em = ($border_allowance_top_px / $current_font_size_px) * 1em
   $border_allowance_bot_em = ($border_allowance_bot_px / $current_font_size_px) * 1em
-  margin-top:       ($line_height * $rhythmic_units_top * 1em) - $border_allowance_top_em - $padding_allowance_top_em
-  margin-bottom:    ($line_height * $rhythmic_units_bot * 1em) - $border_allowance_bot_em - $padding_allowance_bot_em
+
+  $rhythm_allowance_top_em = ($rhythmic_units_top * $rhythmic_unit_px / $current_font_size_px) * 1em
+  $rhythm_allowance_bot_em = ($rhythmic_units_bot * $rhythmic_unit_px / $current_font_size_px) * 1em
+
+  margin-top:       $rhythm_allowance_top_em - $border_allowance_top_em - $padding_allowance_top_em
+  margin-bottom:    $rhythm_allowance_bot_em - $border_allowance_bot_em - $padding_allowance_bot_em
