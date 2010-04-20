@@ -1,8 +1,8 @@
 /* ********** typography start **********
 
 
-$base_font_size_px: 16px
-$base_line_height: 1.5
+$base_font_size_px: 14px
+$base_line_height:  1.5
 // these two variables must be setup before @importing typography_functions
 @import typography_functions
 
@@ -13,25 +13,27 @@ body
   +rhythmic_font_size(0.7em)
 
 p
-  +rhythmic_font_size(1em, 1, 1)
+  +rhythmic_font_size(1em, 1, 0)
   width: 33em
 
 h1
-  +rhythmic_font_size(2em, 1, 1, 0px, 0px, 0em, 0.5em)
+  +rhythmic_font_size(2em, 1, 1, 0px, 0px)
   font-weight: normal
-  border-top:     0px solid black
-  border-bottom:  0px solid black
-  padding-top:    0em
-  padding-bottom: 0.5em
 
 h2
   +rhythmic_font_size(1.1667em, 0, 1)
   font-weight: normal
 
 h3
-  +rhythmic_font_size(1.2em, 1, 1, 10px, 10px)
+  $border_top_width:    1px
+  $border_bottom_width: 1px
+  $padding_top:         0em
+  $padding_bottom:      0em
+  +rhythmic_font_size(8em, 0, 0, $border_top_width, $border_bottom_width, $padding_top, $padding_bottom)
   font-weight: normal
-  border-top:     10px solid black
-  border-bottom:  10px solid black
-  // padding-bottom: 0.7em
-  
+  border-width: $border_top_width 0 $border_bottom_width 0
+  padding-top: $padding_top
+  padding-bottom: $padding_bottom
+  border-style: solid
+  border-color: black
+  background: green
