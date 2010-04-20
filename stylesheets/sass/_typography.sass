@@ -13,22 +13,31 @@ body
   +rhythmic_font_size(0.7em)
 
 p
-  +rhythmic_font_size(1em, 0, 1)
+  $border_top_width:    1px
+  $border_bottom_width: 1px
+  $padding_top:         0.05em
+  $padding_bottom:      0.05em
+  +rhythmic_font_size(1em, 1, 1, $border_top_width, $border_bottom_width, $padding_top, $padding_bottom)
   width: 33em
+  padding-top: $padding_top
+  padding-bottom: $padding_bottom
+  border-width: $border_top_width 0 $border_bottom_width 0
+  border-style: solid
+  border-color: black
 
 h1
-  +rhythmic_font_size(2em, 1, 1, 0px, 0px)
+  +rhythmic_font_size(2em, 0, 0)
   font-weight: normal
 
 h2
-  +rhythmic_font_size(1.1667em, 0, 1)
+  +rhythmic_font_size(1.1667em, 0, 0)
   font-weight: normal
 
 h3
   $border_top_width:    1px
   $border_bottom_width: 1px
-  $padding_top:         0em
-  $padding_bottom:      0em
+  $padding_top:         0.3em
+  $padding_bottom:      0.3em
   +rhythmic_font_size(4em, 1.5, 1.5, $border_top_width, $border_bottom_width, $padding_top, $padding_bottom)
   font-weight: normal
   border-width: $border_top_width 0 $border_bottom_width 0
