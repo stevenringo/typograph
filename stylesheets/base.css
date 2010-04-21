@@ -25,6 +25,30 @@ del { text-decoration: line-through; }
 table { border-collapse: collapse; border-spacing: 0; }
 
 /* ********** reset end ********** */
+#blackblock { background: black; width: 400px; height: 100px; position: relative; }
+#blackblock #color1 { background: rgba(74, 80, 97, 0.25); width: 100px; height: 100px; top: 0px; left: 0px; position: absolute; }
+#blackblock #color2 { background: rgba(74, 80, 97, 0.5); width: 100px; height: 100px; top: 0px; left: 100px; position: absolute; }
+#blackblock #color3 { background: rgba(74, 80, 97, 0.75); width: 100px; height: 100px; top: 0px; left: 200px; position: absolute; }
+#blackblock #color4 { background: rgba(74, 80, 97, 0.9); width: 100px; height: 100px; top: 0px; left: 300px; position: absolute; }
+
+#whiteblock { background: white; width: 400px; height: 100px; position: relative; }
+#whiteblock #color5 { background: #4a5061; width: 100px; height: 100px; top: 0px; left: 0px; position: absolute; }
+#whiteblock #color6 { background: rgba(74, 80, 97, 0.75); width: 100px; height: 100px; top: 0px; left: 100px; position: absolute; }
+#whiteblock #color7 { background: rgba(74, 80, 97, 0.5); width: 100px; height: 100px; top: 0px; left: 200px; position: absolute; }
+#whiteblock #color8 { background: rgba(74, 80, 97, 0.25); width: 100px; height: 100px; top: 0px; left: 300px; position: absolute; }
+
+#blackblocknoalpha { width: 400px; height: 100px; position: relative; }
+#blackblocknoalpha #color1 { background: #121418; width: 100px; height: 100px; top: 0px; left: 0px; position: absolute; }
+#blackblocknoalpha #color2 { background: #252830; width: 100px; height: 100px; top: 0px; left: 100px; position: absolute; }
+#blackblocknoalpha #color3 { background: #373c48; width: 100px; height: 100px; top: 0px; left: 200px; position: absolute; }
+#blackblocknoalpha #color4 { background: #424857; width: 100px; height: 100px; top: 0px; left: 300px; position: absolute; }
+
+#whiteblocknoalpha { width: 400px; height: 100px; position: relative; }
+#whiteblocknoalpha #color5 { background: #4a5061; width: 100px; height: 100px; top: 0px; left: 0px; position: absolute; }
+#whiteblocknoalpha #color6 { background: #777b88; width: 100px; height: 100px; top: 0px; left: 100px; position: absolute; }
+#whiteblocknoalpha #color7 { background: #a4a7b0; width: 100px; height: 100px; top: 0px; left: 200px; position: absolute; }
+#whiteblocknoalpha #color8 { background: #d1d3d7; width: 100px; height: 100px; top: 0px; left: 300px; position: absolute; }
+
 /* ********** layout start ********** */
 body { background: url("../images/underline21.gif"); margin: 3em 6em; }
 
